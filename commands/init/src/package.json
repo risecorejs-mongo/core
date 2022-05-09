@@ -1,0 +1,25 @@
+{
+  "name": "risecorejs-base-template",
+  "version": "1.0.0",
+  "description": "Risecorejs - The Node.js Framework",
+  "main": "config.js",
+  "private": true,
+  "scripts": {
+    "dev": "risecorejs dev",
+    "start": "risecorejs start",
+    "db:rollback": "sequelize db:migrate:undo:all",
+    "db:migrate": "sequelize db:migrate",
+    "db:seeder": "sequelize db:seed:all"
+  },
+  "dependencies": {
+    "@risecorejs_mongo/core": "^2.7.9",
+    "@risecorejs_mongo/helpers": "^2.0.5",
+    "@risecorejs_mongo/middleware": "^1.0.2",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}
