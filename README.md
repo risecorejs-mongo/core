@@ -1,4 +1,6 @@
-# Risecorejs - The Node.js Framework
+# Risecorejs - The Node.js Framework 
+
+# WARNING: This repository is updated version of Risecorejs Framework - https://github.com/risecorejs
 
 ## Setup
 
