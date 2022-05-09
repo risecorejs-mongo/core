@@ -16,9 +16,6 @@
     "type": "git",
     "url": "git+https://github.com/risecorejs-mongo/core.git"
   },
-  "bugs": {
-    "url": ""
-  },
   "license": "MIT",
   "dependencies": {
     "@risecorejs-mongo/helpers": "^2.0.5",
@@ -48,5 +45,12 @@
     "rimraf": "^3.0.2",
     "yargs": "^17.4.1",
     "mongoose": "^6.3.2"
+  },
+  "homepage": "https://github.com/risecorejs-mongo/core#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/risecorejs-mongo/core/issues"
   }
 }
