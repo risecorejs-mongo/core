@@ -39,27 +39,14 @@ module.exports = {
  */
 function getFileContent(entityName) {
   const modelName = _.upperFirst(_.camelCase(entityName))
-  const tableName = _.snakeCase(entityName)
 
-  return `const { Model } = require('sequelize')
+  return `const mongoose = require('mongoose')
 
-  module.exports = (sequelize, DataTypes) => {
-    class ${modelName} extends Model {
-      static associate(models) {}
-    }
-  
-    ${modelName}.init(
-      {
-        // your columns
-      },
-      {
-        sequelize,
-        modelName: '${modelName}',
-        tableName: '${tableName}',
-        autoMigrations: true
-      }
-    )
-  
-    return ${modelName}
-  }`
+const ${modelName}Schema = new mongoose.Schema({
+  fieldName: 'value'
+})
+
+const ${modelName} = mongoose.model(${modelName},${modelName}Schema)
+
+module.exports = ${modelName}`
 }
