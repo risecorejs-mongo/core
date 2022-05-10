@@ -1,7 +1,7 @@
 const path = require('path')
 const merge = require('merge')
-const env = require('@risecorejs/helpers/lib/env')
-const crudBuilder = require('@risecorejs/crud-builder')
+const env = require('@risecorejs-mongo/helpers/lib/env')
+const crudBuilder = require('@risecorejs-mongo/crud-builder')
 
 const models = require('./models')
 

@@ -1,7 +1,7 @@
 require('dotenv').config()
 
-const setGlobalStructs = require('@risecorejs/helpers/lib/set-global-structs')
-const env = require('@risecorejs/helpers/lib/env')
+const setGlobalStructs = require('@risecorejs-mongo/helpers/lib/set-global-structs')
+const env = require('@risecorejs-mongo/helpers/lib/env')
 const os = require('os')
 const cluster = require('cluster')
 const processesRunner = require('@risecorejs/processes-runner')

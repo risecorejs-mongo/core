@@ -1,6 +1,6 @@
 # Risecorejs - The Node.js Framework 
 
-# WARNING: This repository is updated version of Risecorejs Framework - https://github.com/risecorejs
+# WARNING: This repository is custom version of Risecorejs Framework - https://github.com/risecorejs
 
 ## Setup
 

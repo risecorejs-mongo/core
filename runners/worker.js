@@ -1,5 +1,5 @@
 const express = require('express')
-const env = require('@risecorejs/helpers/lib/env')
+const env = require('@risecorejs-mongo/helpers/lib/env')
 
 const packageJson = require('../package.json')
 const register = require('../register')

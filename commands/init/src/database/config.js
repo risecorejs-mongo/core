@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-const env = require('@risecorejs/helpers/lib/env')
+const env = require('@risecorejs-mongo/helpers/lib/env')
 
 const mode = env('NODE_ENV', 'development')
 

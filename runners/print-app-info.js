@@ -1,4 +1,4 @@
-const env = require('@risecorejs/helpers/lib/env')
+const env = require('@risecorejs-mongo/helpers/lib/env')
 const { networkInterfaces } = require('os')
 const cronstrue = require('cronstrue')
 

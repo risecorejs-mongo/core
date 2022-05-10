@@ -7,9 +7,6 @@
   "scripts": {
     "dev": "risecorejs dev",
     "start": "risecorejs start",
-    "db:rollback": "sequelize db:migrate:undo:all",
-    "db:migrate": "sequelize db:migrate",
-    "db:seeder": "sequelize db:seed:all"
   },
   "dependencies": {
     "@risecorejs_mongo/core": "^2.7.9",
