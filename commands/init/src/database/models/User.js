@@ -1,48 +1,11 @@
-const { Model } = require('sequelize')
-const bcrypt = require('bcryptjs')
+const mongoose = require('mongoose')
 
-module.exports = (sequelize, DataTypes) => {
-  class User extends Model {
-    static associate(models) {}
-  }
+const UserSchema = new mongoose.Schema({
+  id: Number,
+  role: String,
+  name: String
+})
 
-  User.init(
-    {
-      role: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        defaultValue: 'default'
-      },
+const User = mongoose.model('User', UserSchema)
 
-      email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true
-      },
-
-      password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        set(val) {
-          this.setDataValue('password', bcrypt.hashSync(val, 1))
-        }
-      }
-    },
-    {
-      sequelize,
-      modelName: 'User',
-      tableName: 'user',
-      autoMigrations: true,
-      paranoid: true,
-      scopes: {
-        withoutPassword: {
-          attributes: {
-            exclude: 'password'
-          }
-        }
-      }
-    }
-  )
-
-  return User
-}
+module.exports = User
