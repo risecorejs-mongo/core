@@ -9,7 +9,6 @@ module.exports = {
     model: makers.model,
     docs: makers.docs,
     routes: makers.routes,
-    entity: makers.entity,
-    migrations: makers.migrations
+    entity: makers.entity
   }
 }
