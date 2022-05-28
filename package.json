@@ -18,10 +18,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@risecorejs-mongo/crud-builder": "^1.2.1",
+    "@risecorejs-mongo/crud-builder": "^1.2.3",
     "@risecorejs-mongo/helpers": "^2.0.6",
     "@risecorejs-mongo/order-builder": "^1.0.2",
-    "@risecorejs-mongo/validator": "^2.0.2",
+    "@risecorejs-mongo/validator": "^2.0.3",
     "@risecorejs/api-docs": "^1.0.3",
     "@risecorejs/only": "^1.0.6",
     "@risecorejs/processes-runner": "^1.0.0",
